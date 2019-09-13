@@ -29,13 +29,26 @@ function clearGrid() {
 }
 
 function generateRandomCards() {
+    let icons = ["frog","frog",
+                 "biking","biking",
+                 "bus", "bus",
+                 "car", "car",
+                 "chess-knight", "chess-knight",
+                 "crow", "crow",
+                 "dove", "dove",
+                 "grin", "grin"];
+
     let board = document.getElementById("game-board");
     for(let y=0; y<4; y++) {
         for(let x=0; x<4; x++) {
             let card = document.createElement("div");
             card.classList.add("card");
+            card.classList.add("fas");
+            let index = parseInt(Math.random() * icons.length);
+            let icon = icons.splice(index, 1);
+            card.classList.add("fa-" + icon);
             card.addEventListener('click', cardClicked);
-            card.innerText = `x:${x}, y:${y}`;
+            //card.innerText = `x:${x}, y:${y}`;
             board.appendChild(card);
         }
     }

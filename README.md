@@ -9,3 +9,5 @@ You will need to open the browser and load the `index.html` file.
 ## Used Libraries
 
 I have used [SweetAlert2](https://sweetalert2.github.io) to display custom fancy alert boxes instead of the native built in javascript alert boxes.
+
+Also used [Font Awesom](https://fontawesome.com) to get access to icons for the cards. The library includes webfonts, so I had to add a folder to accommodate that as well.
