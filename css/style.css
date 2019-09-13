@@ -1,0 +1,32 @@
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#game-score,#game-board,#game-control {
+    width: 80%;
+    min-width: 300px;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    border: 1px solid grey;
+    background-color: #def;
+    /* padding: 1px 4px; */
+}
+#game-board {
+    /* height: 300px; */
+    min-height: 400px;
+}
+
+.card {
+    display: inline-block;
+    border: 1px solid #888;
+    width: 20%;
+    height: 80px;
+    margin: 2%;
+    text-align: center;
+    border-radius: 10px;
+    background-color: gold;
+}
+
+.card.flipped {
+    color: red;
+}
