@@ -1,6 +1,8 @@
 body {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+
+
 #game-score,#game-board,#game-control {
     width: 80vmin;
     min-width: 300px;
@@ -11,10 +13,13 @@ body {
     background-color: #def;
     padding: 0.5em 1em;
 }
+
+
 #game-board {
     /* height: 300px; */
     min-height: 50vmin;
 }
+
 
 .card {
     display: inline-block;
@@ -30,29 +35,38 @@ body {
     transition: 0.5s ease;
 }
 
+
+
 @media screen and (min-width: 700px) and (min-height: 700px) {
     .card {
         font-size: 3rem;
     }
 }
+
+
 @media screen and (min-width: 900px) and (min-height: 700px) {
     .card {
         font-size: 5rem;
     }
 }
+
+
 .card.closed {
     transform: rotateY(180deg);
     background-color: #888;
 }
+
 
 .card.flipped {
     transform: rotateY(0deg);
     background-color: gold;
 }
 
+
 .card.matched {
     opacity: 0.1;
 }
+
 
 .card.closed > span {
     opacity: 0;
@@ -64,14 +78,17 @@ body {
     color: red;
 }
 
+
 .card > span {
     transition: 0.12s ease;
     transition-delay: 0.12s;
 }
 
+
 #stars,#attempts {
     float: right;
 }
+
 
 .fa-star {
     font-size: 1.25em;
